@@ -1,0 +1,44 @@
+/* src/App.css */
+
+.App {
+  text-align: center;
+  height: 100hv;
+  background-color: rgb(219, 127, 52);
+}
+
+.controls {
+  margin-bottom: 10px;
+}
+
+.controls label {
+  margin-right: 10px;
+}
+
+.array-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  transform: rotate(180deg);
+  background-color: #3498db;
+  min-height: 70vh;
+}
+
+.h1text {
+  /* display: flex; */
+  /* justify-content: center; */
+  transform: rotate(180deg);
+  color: #081f2e;
+}
+
+.array-bar {
+  background-color: #db3482;
+  margin: 0 2px;
+  transition: height 0.5s;
+}
+
+.controls button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
