@@ -1,71 +1,32 @@
-# Getting Started with Create React App
+Short Description Of Assignment:-
+This React project serves as a sorting algorithm visualizer, allowing users to interactively observe the step-by-step process of various sorting algorithms. Let's break down the key components and functionalities of the project:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. State Management:
+The project uses the useState hook to manage different pieces of state:
+•	array: Represents the array of elements to be sorted.
+•	sortingAlgorithm: Tracks the currently selected sorting algorithm (options include Insertion Sort, Selection Sort, Bubble Sort, Quick Sort, and Merge Sort).
+•	speed: Represents the animation speed of the sorting process.
+•	arraySize: Denotes the size of the array.
+•	sorting: Indicates whether the sorting process is currently active.
+2. Initialization and Reset:	
+•	The useEffect hook is employed to initialize the array when the arraySize changes.
+•	The resetArray function generates a new array with random values when called.
+3. Sorting Algorithm Visualizations:
+•	The main sorting function, visualizeSort, is triggered by a button click.
+•	It sets the sorting state to true to prevent further sorting until the current process completes.
+•	Depending on the selected sorting algorithm, the corresponding sorting function (insertionSort, selectionSort, bubbleSort, quickSort, mergeSort) is called asynchronously.
+•	The sorting functions include visualizations to highlight the elements being compared, swapped, or moved during the sorting process.
+•	A sleep function is used to introduce delays and visualize the sorting steps at a pace controlled by the speed state.
 
-## Available Scripts
+4. Sorting Algorithm Implementations:
+•	The project includes implementations for Insertion Sort, Selection Sort, and Bubble Sort with clear visual feedback for each step.
+•	Placeholder functions for Quick Sort and Merge Sort are included, though they are currently commented out.
+5. Quick Sort and Merge Sort Implementations:
+•	quickSort and mergeSort functions are asynchronous and provide step-by-step visualizations of their respective sorting processes.
+•	The partition function is used in Quick Sort, and the merge function is used in Merge Sort.
+6. User Interface:
+•	The UI includes controls for selecting the sorting algorithm, adjusting sorting speed and array size, randomizing the array, and triggering the sorting visualization.
+•	The array elements are visually represented as bars, and their heights correspond to their values.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# sortingAlgorithm
+7. Conclusion:
+•	The project effectively combines React, asynchronous operations, and visualization techniques to create an interactive sorting algorithm visualizer, providing users with a hands-on understanding of how different sorting algorithms operate on arrays of varying sizes.
