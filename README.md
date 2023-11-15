@@ -31,3 +31,4 @@ The project uses the useState hook to manage different pieces of state:
 7. Conclusion:
 •	The project effectively combines React, asynchronous operations, and visualization techniques to create an interactive sorting algorithm visualizer, providing users with a hands-on understanding of how different sorting algorithms operate on arrays of varying sizes.
 # SortingAlgorithm
+# SortingAlogorithm
